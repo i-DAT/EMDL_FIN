@@ -1,0 +1,60 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/myScreen"
+
+    
+    tools:context=".LocalBoundActivity" >
+
+        <TextView
+            android:id="@+id/accelVal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="47dp"
+            android:text="@string/hello_world"
+            android:textColorHint="@color/black" />
+
+        <ImageView
+            android:id="@+id/imageViewCompass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            
+            android:layout_centerHorizontal="true"
+          android:layout_centerVertical="true"
+            android:src="@drawable/img_compass" />
+
+        <ImageView
+            android:id="@+id/ImageView01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+          android:layout_centerVertical="true"
+            android:src="@drawable/img_compass2" />
+
+        <TextView
+            android:id="@+id/accelVals2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/imageViewCompass"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="19dp"
+            android:text="@string/hello_world"
+            android:textColorHint="@color/black" />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/imageViewCompass"
+            android:layout_alignRight="@+id/imageViewCompass"
+            android:layout_below="@+id/imageViewCompass"
+            android:layout_marginTop="18dp"
+            android:onClick="sendIntent"
+            android:text="FONDLE" />
+
+</RelativeLayout>
+
